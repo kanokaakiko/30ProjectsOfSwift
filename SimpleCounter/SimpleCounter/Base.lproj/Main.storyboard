@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UXU-lJ-SDH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Counter-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agb-A6-3Kv">
+                                <rect key="frame" x="172" y="214" width="31" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap or Hold" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVR-Ax-y74">
+                                <rect key="frame" x="138.5" y="354" width="98.5" height="23"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.42651097539999999" green="0.569113918" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="4Ei-ia-mDb" appends="YES" id="yZF-fa-1xw"/>
+                                    <outletCollection property="gestureRecognizers" destination="ECz-6s-uFF" appends="YES" id="KXi-oN-EhF"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="you can tap or hold to begin counting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeM-B9-t0g">
+                                <rect key="frame" x="74" y="611" width="227" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="0.1585491436245845" blue="0.1875810315773303" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aVR-Ax-y74" firstAttribute="top" secondItem="agb-A6-3Kv" secondAttribute="bottom" constant="80" id="6Md-q4-mtJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aeM-B9-t0g" secondAttribute="bottom" constant="40" id="FmB-mw-9OQ"/>
+                            <constraint firstItem="agb-A6-3Kv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G5b-Cp-r1m"/>
+                            <constraint firstItem="aeM-B9-t0g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PEc-b0-wiq"/>
+                            <constraint firstItem="aVR-Ax-y74" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U6i-pb-GfD"/>
+                            <constraint firstItem="agb-A6-3Kv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="sV1-Xg-jZb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Counter" id="CCL-5Z-iqd">
+                        <barButtonItem key="leftBarButtonItem" title="reset" id="gE2-a8-aqn">
+                            <connections>
+                                <action selector="resetCounter:" destination="BYZ-38-t0r" id="krM-GR-c2n"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="countDisplay" destination="agb-A6-3Kv" id="4oA-0Z-ZB2"/>
+                        <outlet property="counterBtn" destination="aVR-Ax-y74" id="lhf-uV-uED"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="4Ei-ia-mDb">
+                    <connections>
+                        <action selector="tapToCount:" destination="BYZ-38-t0r" id="aI9-g1-FBd"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="ECz-6s-uFF">
+                    <connections>
+                        <action selector="beginToCount:" destination="BYZ-38-t0r" id="rfC-Km-jBw"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1620" y="93.103448275862078"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Zc8-45-pS4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UXU-lJ-SDH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="krX-Hv-Ohj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zwA-4S-4QS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DWB-x2-27k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="680.79999999999995" y="93.103448275862078"/>
+        </scene>
+    </scenes>
+</document>
