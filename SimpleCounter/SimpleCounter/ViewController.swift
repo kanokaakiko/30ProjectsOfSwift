@@ -10,30 +10,32 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var sa: UITextField!
-    @IBOutlet weak var genderSelector: UISegmentedControl!
-    @IBOutlet weak var nameInput: UITextField!
-    @IBOutlet weak var NameInput: UITextField!
     var counter: Int = 0
     
     var timer = Timer()
-    @IBOutlet weak var salaryLab: UILabel!
-    @IBOutlet weak var genderSelector: UISegmentedControl!
     
     var isPlaying = false
     
     @IBOutlet weak var countDisplay: UILabel!
     
     @IBOutlet weak var counterBtn: UILabel!
-    @IBAction func chooseSalary(_ sender: Any) {
-    }
-    
+   
     @IBAction func tapToCount(_ sender: Any) {
         
+        if (sender as! UITapGestureRecognizer).state == .began {
+            
+            counterBtn.backgroundColor = UIColor.black
+            
+            counterBtn.alpha = 0.7
+        }
+        else if (sender as! UITapGestureRecognizer).state == .ended
+        {
+            counterBtn.backgroundColor = UIColor.clear
+            
+            counterBtn.alpha = 1.0
+        }
         counter = 0
         
-        @IBAction func chooseSalary(_ sender: Any) {
-        }
         timer.invalidate()
         
         if isPlaying {
@@ -58,13 +60,20 @@ class ViewController: UIViewController {
             
             timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateCounterDisplay), userInfo: nil, repeats: true)
             
+            counterBtn.backgroundColor = UIColor.black
+            
+            counterBtn.alpha = 0.3
+            
         }else if (sender as! UILongPressGestureRecognizer).state == .ended {
             
             timer.invalidate()
             
             countDisplay.text = "\(counter)"
+            
+            counterBtn.backgroundColor = UIColor.clear
+            
+            counterBtn.alpha = 1.0
         }
-
     }
 
     @IBAction func resetCounter(_ sender: Any) {

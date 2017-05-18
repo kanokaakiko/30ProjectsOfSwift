@@ -51,7 +51,7 @@ class ViewController: UIViewController {
         let now = Date()
         let component = (gregorian as NSCalendar?)?.components(NSCalendar.Unit.year, from: birthdayPicker.date, to: now, options: [])
         
-        let age: Int? = (component?.year)!
+        let age: Int? = component?.year
         
         var interested: String! = "men"
         
