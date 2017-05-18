@@ -7,6 +7,8 @@ I am omni_Hsin, an Chinese developer and current learning Swift. I've been think
 
 This project was totally inspired by Sam Lu's project.
 
-# Project Index & GIF Showcase
+## Project Index & GIF Showcase
 
 Project01 - [SimpleCounter](https://github.com/iAronTalk/30ProjectsOfSwift/tree/master/SimpleCounter)
+
+![Alt text](https://github.com/iAronTalk/30ProjectsOfSwift/blob/master/SimpleCounter/SimpleCounter.gif?raw=true)
