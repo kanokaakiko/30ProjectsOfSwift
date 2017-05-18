@@ -10,20 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var sa: UITextField!
+    @IBOutlet weak var genderSelector: UISegmentedControl!
+    @IBOutlet weak var nameInput: UITextField!
+    @IBOutlet weak var NameInput: UITextField!
     var counter: Int = 0
     
     var timer = Timer()
+    @IBOutlet weak var salaryLab: UILabel!
+    @IBOutlet weak var genderSelector: UISegmentedControl!
     
     var isPlaying = false
     
     @IBOutlet weak var countDisplay: UILabel!
     
     @IBOutlet weak var counterBtn: UILabel!
+    @IBAction func chooseSalary(_ sender: Any) {
+    }
     
     @IBAction func tapToCount(_ sender: Any) {
         
         counter = 0
         
+        @IBAction func chooseSalary(_ sender: Any) {
+        }
         timer.invalidate()
         
         if isPlaying {
