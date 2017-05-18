@@ -12,3 +12,7 @@ This project was totally inspired by Sam Lu's project.
 Project01 - [SimpleCounter](https://github.com/iAronTalk/30ProjectsOfSwift/tree/master/SimpleCounter)
 
 ![Alt text](https://github.com/iAronTalk/30ProjectsOfSwift/blob/master/SimpleCounter/SimpleCounter.gif?raw=true)
+
+Project02 - [LoveTweet](https://github.com/iAronTalk/30ProjectsOfSwift/tree/master/LoveTweet)
+
+![Alt text](https://github.com/iAronTalk/30ProjectsOfSwift/blob/master/LoveTweet/LoveTweet.gif?raw=true)
