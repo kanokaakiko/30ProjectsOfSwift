@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:TwitterSplash/TwitterSplash.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:LoveTweet/LoveTweet.xcodeproj">
    </FileRef>
    <FileRef
