@@ -17,10 +17,11 @@ Project02 - [LoveTweet](https://github.com/iAronTalk/30ProjectsOfSwift/tree/mast
 
 ![Alt text](https://github.com/iAronTalk/30ProjectsOfSwift/blob/master/LoveTweet/LoveTweet.gif?raw=true)
 
-Project03 - [SimpleCounter](https://github.com/iAronTalk/30ProjectsOfSwift/tree/master/TwitterSplash)
+Project03 - [TwitterSplash](https://github.com/iAronTalk/30ProjectsOfSwift/tree/master/TwitterSplash)
 
-![Alt text](https://github.com/iAronTalk/30ProjectsOfSwift/blob/master/SimpleCounter/TwitterSplash.gif?raw=true)
+![Alt text](https://github.com/iAronTalk/30ProjectsOfSwift/blob/master/TwitterSplash/TwitterSplash.gif?raw=true)
 
-Project04 - [SimpleCounter](https://github.com/iAronTalk/30ProjectsOfSwift/tree/master/CollectionAnimation)
 
-![Alt text](https://github.com/iAronTalk/30ProjectsOfSwift/blob/master/SimpleCounter/CollectionAnimation.gif?raw=true)
+Project04 - [CollectionAnimation](https://github.com/iAronTalk/30ProjectsOfSwift/tree/master/CollectionAnimation)
+
+![Alt text](https://github.com/iAronTalk/30ProjectsOfSwift/blob/master/CollectionAnimation/CollectionAnimation.gif?raw=true)
