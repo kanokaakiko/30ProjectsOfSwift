@@ -19,40 +19,42 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bCH-NY-BWd">
-                        <rect key="frame" x="0.0" y="0.0" width="631" height="140"/>
+                        <rect key="frame" x="5" y="5" width="621" height="140"/>
                         <color key="backgroundColor" red="0.070588235289999995" green="0.56862745100000001" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="140" id="U9x-dg-epq"/>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="140" id="qxi-Rf-d3N"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="长篇大论" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGa-QE-Q5A">
-                        <rect key="frame" x="0.0" y="140" width="631" height="263"/>
-                        <color key="backgroundColor" red="0.99215686270000003" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGa-QE-Q5A">
+                        <rect key="frame" x="5" y="150" width="621" height="54"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <string key="text">WWDC 2017 Wishlist
+With WWDC fast approaching, I thought I would put together a wishlist of what I’d like to see. Here’s my quick and dirty wishlist.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79r-hX-9ra">
-                        <rect key="frame" x="20" y="20" width="45" height="30"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79r-hX-9ra">
+                        <rect key="frame" x="20" y="20" width="20" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="30" id="1ge-a1-NHI"/>
-                            <constraint firstAttribute="width" constant="45" id="V7g-l4-9ii"/>
+                            <constraint firstAttribute="height" constant="20" id="1ge-a1-NHI"/>
+                            <constraint firstAttribute="width" constant="20" id="V7g-l4-9ii"/>
                         </constraints>
-                        <state key="normal" title="back"/>
+                        <state key="normal" image="back-icon"/>
                     </button>
                 </subviews>
             </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="eGa-QE-Q5A" firstAttribute="centerX" secondItem="68I-Um-oAH" secondAttribute="centerX" id="4Ih-7K-hnJ"/>
-                <constraint firstItem="bCH-NY-BWd" firstAttribute="top" secondItem="68I-Um-oAH" secondAttribute="top" id="BPN-ae-CqH"/>
+                <constraint firstItem="bCH-NY-BWd" firstAttribute="top" secondItem="68I-Um-oAH" secondAttribute="top" constant="5" id="BPN-ae-CqH"/>
                 <constraint firstItem="79r-hX-9ra" firstAttribute="top" secondItem="68I-Um-oAH" secondAttribute="top" constant="20" id="ISC-cP-6sK"/>
-                <constraint firstItem="eGa-QE-Q5A" firstAttribute="leading" secondItem="68I-Um-oAH" secondAttribute="leading" id="Ld9-Gp-le7"/>
-                <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="eGa-QE-Q5A" secondAttribute="bottom" id="MZu-b4-lyz"/>
-                <constraint firstItem="eGa-QE-Q5A" firstAttribute="top" secondItem="bCH-NY-BWd" secondAttribute="bottom" id="m1b-6G-Pig"/>
+                <constraint firstItem="eGa-QE-Q5A" firstAttribute="leading" secondItem="68I-Um-oAH" secondAttribute="leading" constant="5" id="Ld9-Gp-le7"/>
+                <constraint firstItem="eGa-QE-Q5A" firstAttribute="top" secondItem="bCH-NY-BWd" secondAttribute="bottom" constant="5" id="m1b-6G-Pig"/>
                 <constraint firstItem="79r-hX-9ra" firstAttribute="leading" secondItem="68I-Um-oAH" secondAttribute="leading" constant="20" id="m4g-Fi-Ilu"/>
                 <constraint firstItem="bCH-NY-BWd" firstAttribute="centerX" secondItem="68I-Um-oAH" secondAttribute="centerX" id="ooE-PK-Zzn"/>
-                <constraint firstItem="bCH-NY-BWd" firstAttribute="leading" secondItem="68I-Um-oAH" secondAttribute="leading" id="yK4-je-6sQ"/>
+                <constraint firstItem="bCH-NY-BWd" firstAttribute="leading" secondItem="68I-Um-oAH" secondAttribute="leading" constant="5" id="yK4-je-6sQ"/>
             </constraints>
             <size key="customSize" width="631" height="403"/>
             <connections>
@@ -63,4 +65,7 @@
             <point key="canvasLocation" x="189.5" y="-183.5"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="back-icon" width="14" height="24"/>
+    </resources>
 </document>

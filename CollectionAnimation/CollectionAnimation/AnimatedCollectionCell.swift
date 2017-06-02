@@ -14,5 +14,26 @@ class AnimatedCollectionCell: UICollectionViewCell {
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var infoDisplay: UILabel!
     
+    var backButtonTapped: (() -> Void)?
     
+    func configCell(_ cellInfo: ColletionCellModel) {
+        
+        imageView.image = UIImage(named: cellInfo.imagePath)
+        
+        backButton.isHidden = true
+
+        backButton.addTarget(self, action: #selector(backButtonDidTouched), for: .touchUpInside)
+    }
+    
+    func backButtonDidTouched(_ sender:UIGestureRecognizer){
+        
+        backButtonTapped?()
+    }
+    
+    func handleCellSelection(){
+        
+        self.superview?.bringSubview(toFront: self)
+        
+        backButton.isHidden = false
+    }
 }
