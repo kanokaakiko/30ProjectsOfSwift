@@ -49,7 +49,7 @@ class ViewController: UIViewController, CAAnimationDelegate {
         let thirdState = NSValue.init(cgRect: CGRect.init(x: 0, y: 0, width: 1600, height: 1280))
         
         keyFrameAnimation.values = [initial, secondState, thirdState]
-        keyFrameAnimation.keyTimes = [0, 0.3, 1.0]
+        keyFrameAnimation.keyTimes = [0, 0.2, 0.6]
         
         self.mask?.add(keyFrameAnimation, forKey: "bounds")
     }

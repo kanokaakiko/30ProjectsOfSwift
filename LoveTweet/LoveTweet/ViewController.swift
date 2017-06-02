@@ -9,7 +9,6 @@
 import UIKit
 import Social
 class ViewController: UIViewController {
-
     //Mark: outlets
     @IBOutlet weak var nameInput: UITextField!
     @IBOutlet weak var genderSelector: UISegmentedControl!
