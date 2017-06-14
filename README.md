@@ -25,3 +25,6 @@ Project03 - [TwitterSplash](https://github.com/iAronTalk/30ProjectsOfSwift/tree/
 Project04 - [CollectionAnimation](https://github.com/iAronTalk/30ProjectsOfSwift/tree/master/CollectionAnimation)
 
 ![Alt text](https://github.com/iAronTalk/30ProjectsOfSwift/blob/master/CollectionAnimation/CollectionAnimation.gif?raw=true)
+
+Project05 - [WaveAnimation](https://github.com/iAronTalk/30ProjectsOfSwift/tree/master/WaveAnimation)
+![Alt text](https://github.com/iAronTalk/30ProjectsOfSwift/blob/master/WaveAnimation/WaveAnimation.gif?raw=true)
