@@ -24,6 +24,7 @@ class ViewController: UIViewController, CAAnimationDelegate {
         
         self.mask = CALayer.init()
         self.mask?.contents = UIImage.init(named: "twitter_logo_mask")?.cgImage
+        @IBOutlet weak var waveHeight: UISlider!
         self.mask?.bounds = CGRect.init(x: 0, y: 0, width: 100, height: 80)
         self.mask?.anchorPoint = CGPoint.init(x: 0.5, y: 0.5)
         self.mask?.position = CGPoint.init(x: (UIScreen.main.bounds.size.width) / 2.0, y: (UIScreen.main.bounds.size.height) / 2.0)
