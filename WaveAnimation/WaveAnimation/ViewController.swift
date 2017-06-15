@@ -18,6 +18,8 @@ struct SineParameter {
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var display: UILabel!
+    
     @IBOutlet weak var waveView: WaveView!
     
     @IBOutlet weak var waveheight: UISlider!
@@ -50,21 +52,11 @@ class ViewController: UIViewController {
     
     @IBAction func changeWaveParameter(_ sender: Any) {
         
-        let parameter = SineParameter(waveHeight: Double(self.waveheight.value * 320), waveSpeed: Double(self.wavespeed.value), waveIncrease: Double(self.waveincrease.value * 100), wavePeriod: Double(self.waveperiod.value))
+        let parameter = SineParameter(waveHeight: Double(self.waveheight.value), waveSpeed: Double(self.wavespeed.value), waveIncrease: Double(self.waveincrease.value), wavePeriod: Double(self.waveperiod.value))
         
         self.configureWave(parameter)
         
-    }
-    
-    @IBAction func changeWaveSpeed(_ sender: Any) {
-        
-    }
-    
-    @IBAction func changeWaveInscrease(_ sender: Any) {
-        
-    }
-    
-    @IBAction func changeWavePeriod(_ sender: Any) {
+        self.display.text = String.init(format: "%.2f sin(%.2f x + %.2f) + %.2f" , self.waveincrease.value, self.waveperiod.value, self.wavespeed.value, self.waveheight.value)
         
     }
     

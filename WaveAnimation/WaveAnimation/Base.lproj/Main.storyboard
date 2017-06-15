@@ -35,7 +35,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cfy-ag-82p">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="250" minValue="0.0" maxValue="500" translatesAutoresizingMaskIntoConstraints="NO" id="cfy-ag-82p">
                                 <rect key="frame" x="126" y="403" width="205" height="31"/>
                                 <connections>
                                     <action selector="changeWaveParameter:" destination="BYZ-38-t0r" eventType="valueChanged" id="NJM-hy-0yC"/>
@@ -47,13 +47,13 @@
                                     <action selector="changeWaveParameter:" destination="BYZ-38-t0r" eventType="valueChanged" id="Quk-ex-Vsg"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7rp-ja-fnJ">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="7rp-ja-fnJ">
                                 <rect key="frame" x="126" y="525" width="205" height="31"/>
                                 <connections>
                                     <action selector="changeWaveParameter:" destination="BYZ-38-t0r" eventType="valueChanged" id="dGJ-rL-Q8v"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="AKQ-K0-O97">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="AKQ-K0-O97">
                                 <rect key="frame" x="126" y="586" width="205" height="31"/>
                                 <connections>
                                     <action selector="changeWaveParameter:" destination="BYZ-38-t0r" eventType="valueChanged" id="cc7-tW-YmN"/>
@@ -114,6 +114,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="display" destination="PN7-tr-Yr2" id="KQZ-p2-Vto"/>
                         <outlet property="waveView" destination="kQh-ER-Szd" id="fKX-qb-ixi"/>
                         <outlet property="waveheight" destination="cfy-ag-82p" id="3BJ-eN-WVX"/>
                         <outlet property="waveincrease" destination="7rp-ja-fnJ" id="tN3-0X-sK9"/>
@@ -123,7 +124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+            <point key="canvasLocation" x="-298" y="7"/>
         </scene>
     </scenes>
 </document>
