@@ -27,4 +27,5 @@ Project04 - [CollectionAnimation](https://github.com/iAronTalk/30ProjectsOfSwift
 ![Alt text](https://github.com/iAronTalk/30ProjectsOfSwift/blob/master/CollectionAnimation/CollectionAnimation.gif?raw=true)
 
 Project05 - [WaveAnimation](https://github.com/iAronTalk/30ProjectsOfSwift/tree/master/WaveAnimation)
+
 ![Alt text](https://github.com/iAronTalk/30ProjectsOfSwift/blob/master/WaveAnimation/WaveAnimation.gif?raw=true)
