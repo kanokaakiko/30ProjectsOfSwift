@@ -17,15 +17,22 @@ class MenuTransitionManager: NSObject ,UIViewControllerTransitioningDelegate, UI
     func onStageMenuController(_ controller: MenuViewController) {
         
         controller.view.alpha = 1.0
+        
         controller.leftContainer.transform = CGAffineTransform.identity
         controller.rightContainer.transform = CGAffineTransform.identity
     }
     
-    func offStageMenuController(_ controller: MenuViewController) {
+    func offStageMenuController(_ controller: MenuViewController ,_ animated: Bool) {
         
-        controller.view.alpha = 0.0
-        controller.leftContainer.transform = CGAffineTransform.init(translationX: -300, y: 0)
-        controller.rightContainer.transform = CGAffineTransform.init(translationX: 300, y: 0)
+        if animated {
+            controller.view.alpha = 0.0
+        }
+
+        controller.leftContainer.transform = CGAffineTransform.init(translationX: -500, y: 0)
+        controller.rightContainer.transform = CGAffineTransform.init(translationX: 500, y: 0)
+        
+        controller.leftContainer.transform = CGAffineTransform.init(rotationAngle: -45)
+        controller.rightContainer.transform  = CGAffineTransform.init(rotationAngle: 45)
     }
     
     //Mark: UIViewControllerDeleagte
@@ -64,10 +71,10 @@ class MenuTransitionManager: NSObject ,UIViewControllerTransitioningDelegate, UI
         let menuView = menuViewController.view
         let bottomView = bottomViewController.view
         
+        //Firstly we set the original postion off the screen
         if (self.presenting) {
             
-            self.offStageMenuController(menuViewController)
-            
+            self.offStageMenuController(menuViewController, false)
         }
         
         container.addSubview(bottomView!)
@@ -83,8 +90,7 @@ class MenuTransitionManager: NSObject ,UIViewControllerTransitioningDelegate, UI
                 
             } else {
                 
-                self.offStageMenuController(menuViewController)
-                
+                self.offStageMenuController(menuViewController, true)
             }
             
         }, completion: { finished in
