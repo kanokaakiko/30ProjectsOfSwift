@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ShareViewAnimation/ShareViewAnimation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TabBarAnimation/TabBarAnimation.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:TumblrMenu/TumblrMenu.xcodeproj">
    </FileRef>
    <FileRef
